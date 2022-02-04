@@ -12,4 +12,5 @@ from django.http import HttpResponse
 # it needs to be map to url
 def say_hello(request):
     # pull data from db, tarnsform, send email
-    return HttpResponse('Hello World')
+    # return HttpResponse('Hello World')
+    return render(request, 'hello.html', {'name':'Winnie'})
