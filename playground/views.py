@@ -13,4 +13,6 @@ from django.http import HttpResponse
 def say_hello(request):
     # pull data from db, tarnsform, send email
     # return HttpResponse('Hello World')
+    x = 1 
+    y = 2
     return render(request, 'hello.html', {'name':'Winnie'})
